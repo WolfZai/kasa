@@ -1,0 +1,21 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Fixe à 3 colonnes */
+  gap: 40px;
+  padding: 50px 40px;
+  background-color: $background-color;
+  border-radius: 25px;
+  
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur tablette */
+    gap: 30px;
+    padding: 40px 30px;
+  }
+  
+  @media (max-width: $breakpoint-mobile) {
+    grid-template-columns: 1fr; /* 1 colonne sur mobile */
+    gap: 20px;
+    padding: 0;
+    background-color: transparent;
+  }
+}
