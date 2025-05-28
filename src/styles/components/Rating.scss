@@ -1,0 +1,10 @@
+.rating {
+    &__star {
+      &--active {
+        color: $primary-color;
+      }
+      &--inactive {
+        color: grey;
+      }
+    }
+}
